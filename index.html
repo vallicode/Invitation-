@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Valliyappan ♥ Vishalakshi | Wedding Countdown</title>
+<meta name="theme-color" content="#3b0716">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;600&display=swap');
+:root{--gold:#e6c77b;--cream:#fff4df;--wine:#3b0716;--green:#0d4739}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--cream);font-family:'Cormorant Garamond',serif;background:radial-gradient(ellipse at 50% 35%,#76263a 0,#3b0716 50%,#17040b 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.17;background-image:linear-gradient(45deg,transparent 45%,#d5a95b 46%,#d5a95b 47%,transparent 48%),linear-gradient(-45deg,transparent 45%,#d5a95b 46%,#d5a95b 47%,transparent 48%);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 65%);z-index:0}
+canvas#dust{position:fixed;inset:0;pointer-events:none;z-index:1}.scene{min-height:100vh;position:relative;display:grid;place-items:center;padding:45px 20px;perspective:1200px;z-index:2}
+.mandap{position:absolute;top:5%;width:min(94vw,900px);height:76vh;opacity:.42;pointer-events:none;transform-style:preserve-3d;filter:drop-shadow(0 0 30px #d5a95b55)}
+.pillar{position:absolute;bottom:3%;height:76%;width:9%;background:linear-gradient(90deg,#6a3219,#e2bd70,#7a411c,#d9b76b);border:3px solid #c99d51;border-radius:10px;box-shadow:inset 8px 0 15px #fff3b055,0 20px 40px #0008}
+.pillar:before,.pillar:after{content:"";position:absolute;left:-22%;width:144%;height:10%;background:linear-gradient(#e5c57c,#783c20);border:2px solid #c99d51;border-radius:8px}.pillar:before{top:0}.pillar:after{bottom:0}
+.p1{left:5%}.p2{left:25%}.p3{right:25%}.p4{right:5%}
+.roof{position:absolute;top:14%;left:2%;width:96%;height:13%;background:linear-gradient(180deg,#e6c77b,#6b2c20);clip-path:polygon(0 40%,10% 0,90% 0,100% 40%,95% 100%,5% 100%);border:2px solid #e6c77b}
+.innerroof{position:absolute;top:25%;left:14%;width:72%;height:9%;background:linear-gradient(#e4c477,#783d21);box-shadow:0 8px 22px #0008}
+.lamps{position:absolute;bottom:5%;left:0;right:0;display:flex;justify-content:space-between;font-size:clamp(50px,8vw,95px);color:#e4bd68;text-shadow:0 0 16px #ffd873}
+.card{width:min(780px,100%);text-align:center;position:relative;transform-style:preserve-3d;padding:clamp(30px,6vw,70px) clamp(18px,5vw,50px);background:linear-gradient(145deg,#fff4dfdd,#f8dfb8e8);color:#511526;border:1px solid #d9b568;border-radius:28px;box-shadow:0 35px 90px #0009, inset 0 0 0 8px #e4c77b33,inset 0 0 0 2px #a36c38;animation:float 6s ease-in-out infinite;backdrop-filter:blur(7px)}
+@keyframes float{0%,100%{transform:translateY(0) rotateX(1deg)}50%{transform:translateY(-12px) rotateX(-1deg)}}
+.card:before{content:"";position:absolute;inset:12px;border:1px solid #b88c4a;border-radius:20px;pointer-events:none}
+.eyebrow{letter-spacing:.24em;text-transform:uppercase;font-size:clamp(11px,2vw,16px);color:#82552b}
+h1{font-size:clamp(42px,8vw,82px);line-height:.98;margin:22px 0 15px;font-weight:500;color:#5a1026;text-shadow:0 2px #fff8,0 8px 20px #8a533033}
+.heart{color:#a42b42;display:inline-block;animation:beat 1.5s infinite}@keyframes beat{50%{transform:scale(1.18)}}
+.subtitle{font-size:clamp(18px,3vw,26px);font-style:italic;margin-bottom:24px;color:#71432b}
+.tamil{font-family:'Noto Serif Tamil',serif;font-size:clamp(17px,3vw,23px);color:#7c253c;margin:15px auto 25px}
+.rule{width:140px;height:1px;background:linear-gradient(90deg,transparent,#9d6a32,transparent);margin:25px auto}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:25px 0}
+.unit{padding:15px 8px;border-radius:14px;background:linear-gradient(145deg,#5a1427,#340715);color:#f8e4b3;box-shadow:0 10px 22px #4b182733,inset 0 1px #f4d78b}
+.unit strong{display:block;font-size:clamp(30px,6vw,55px);font-weight:500;line-height:1}.unit span{font-size:12px;text-transform:uppercase;letter-spacing:.15em}
+.date{font-size:clamp(20px,3vw,30px);color:#6a2437;margin:10px 0}.invite{font-size:20px;line-height:1.5;max-width:570px;margin:auto}
+.btn{display:inline-block;margin-top:20px;padding:13px 25px;border-radius:999px;border:1px solid #a7793b;background:linear-gradient(#e7c67c,#c18c44);color:#461020;text-decoration:none;font-size:18px;box-shadow:0 8px 22px #6a321955;transition:transform .3s}.btn:hover{transform:translateY(-3px)}
+section{position:relative;z-index:2;text-align:center;padding:80px 20px}.section-title{font-size:clamp(32px,5vw,50px);color:var(--gold);font-weight:500}.timeline{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;max-width:1000px;margin:auto}.tile{max-width:250px;padding:22px;border:1px solid #d5b36c77;background:#fff1d50c;border-radius:18px;box-shadow:0 15px 35px #0003;transition:transform .4s}.tile:hover{transform:translateY(-7px) rotateY(4deg)}.tile h3{color:var(--gold);font-size:25px;font-weight:500}.tile p{font-size:19px}.blessing{font-family:'Noto Serif Tamil',serif;color:#f6dfac;font-size:clamp(18px,3vw,26px);line-height:1.7}
+footer{padding:35px;text-align:center;color:#d6b773;letter-spacing:.1em}
+@media(max-width:540px){.countdown{gap:6px}.unit{padding:12px 5px}.unit span{letter-spacing:.05em;font-size:10px}.scene{padding:28px 12px}.mandap{height:65vh}.pillar{width:11%}.p2{left:21%}.p3{right:21%}.card{border-radius:22px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<canvas id="dust"></canvas>
+<div class="scene" id="hero">
+<div class="mandap" aria-hidden="true"><div class="roof"></div><div class="innerroof"></div><div class="pillar p1"></div><div class="pillar p2"></div><div class="pillar p3"></div><div class="pillar p4"></div><div class="lamps"><span>🪔</span><span>🪔</span></div></div>
+<main class="card" id="card">
+<div class="eyebrow">A celebration of love • A Chettinad wedding</div>
+<h1>Valliyappan<br><span class="heart">♥</span><br>Vishalakshi</h1>
+<div class="subtitle">Two Hearts • One Beautiful Journey • Forever</div>
+<div class="tamil">இரு மனங்கள் இணையும் இனிய தருணம்</div>
+<div class="rule"></div>
+<div class="eyebrow">Our wedding countdown</div>
+<div class="countdown" aria-live="polite">
+<div class="unit"><strong id="days">--</strong><span>Days</span></div><div class="unit"><strong id="hours">--</strong><span>Hours</span></div><div class="unit"><strong id="mins">--</strong><span>Minutes</span></div><div class="unit"><strong id="secs">--</strong><span>Seconds</span></div>
+</div>
+<div class="date">February 1, 2027 • 9:30 AM</div>
+<div class="invite">With the blessings of our families, we begin a beautiful new chapter. Join us as two hearts become one.</div>
+<a class="btn" href="#story">Our beautiful beginning ↓</a>
+</main>
+</div>
+<section id="story"><h2 class="section-title">A Journey to Forever</h2><div class="timeline">
+<div class="tile"><h3>Two Beginnings</h3><p>Two beautiful lives, each with their own dreams and stories.</p></div>
+<div class="tile"><h3>One Meeting</h3><p>Destiny brought two hearts closer, beginning a new chapter.</p></div>
+<div class="tile"><h3>Forever</h3><p>With family blessings, a lifetime of love and memories begins.</p></div>
+</div></section>
+<section><div class="blessing">மங்கலம் நிறைந்த இல்லற வாழ்வு அமைய,<br>அன்பும் அருளும் என்றும் துணையாக இருக்கட்டும்.</div><p style="font-size:20px;color:#e9c77e">We invite you to be part of our beautiful beginning.</p></section>
+<footer>Made with love ♥ Valliyappan &amp; Vishalakshi</footer>
+<script>
+const target=new Date('2027-02-01T09:30:00+05:30').getTime();
+function tick(){let diff=Math.max(0,target-Date.now());let d=Math.floor(diff/86400000);diff%=86400000;let h=Math.floor(diff/3600000);diff%=3600000;let m=Math.floor(diff/60000);diff%=60000;let s=Math.floor(diff/1000);
+document.getElementById('days').textContent=d;document.getElementById('hours').textContent=String(h).padStart(2,'0');document.getElementById('mins').textContent=String(m).padStart(2,'0');document.getElementById('secs').textContent=String(s).padStart(2,'0')}
+tick();setInterval(tick,1000);
+const c=document.getElementById('dust'),ctx=c.getContext('2d');let pts=[];
+function resize(){c.width=innerWidth*devicePixelRatio;c.height=innerHeight*devicePixelRatio;ctx.scale(devicePixelRatio,devicePixelRatio);pts=Array.from({length:75},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*2+0.5,v:Math.random()*0.45+0.12,a:Math.random()*0.5+0.2}))}
+function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);pts.forEach(p=>{p.y-=p.v;if(p.y<0)p.y=innerHeight;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(238,199,115,${p.a})`;ctx.fill()});requestAnimationFrame(draw)}resize();draw();addEventListener('resize',resize);
+const hero=document.getElementById('hero'),card=document.getElementById('card');hero.addEventListener('mousemove',e=>{let x=(e.clientX/innerWidth-.5)*8,y=(e.clientY/innerHeight-.5)*-8;card.style.transform=`translateY(0) rotateY(${x}deg) rotateX(${y}deg)`});hero.addEventListener('mouseleave',()=>card.style.transform='');hero.addEventListener('touchmove',e=>{if(e.touches.length){let t=e.touches[0];card.style.transform=`rotateY(${(t.clientX/innerWidth-.5)*4}deg) rotateX(${(t.clientY/innerHeight-.5)*-4}deg)`}},{passive:true});
+</script>
+</body></html>
